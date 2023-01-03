@@ -12,29 +12,22 @@
                     </svg>
                 </button>
                 <div class="stories__content">
+
                     <button class="story story--has-story">
                         <div class="story__avatar">
                             <div class="story__border">
                                 <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
                                     <circle r="31" cy="32" cx="32"/>
-                                    <defs>
-                                        <linearGradient y2="0" x2="1" y1="1" x1="0" id="--story-gradient">
-                                            <stop offset="0" stop-color="#f09433"/>
-                                            <stop offset="0.25" stop-color="#e6683c"/>
-                                            <stop offset="0.5" stop-color="#dc2743"/>
-                                            <stop offset="0.75" stop-color="#cc2366"/>
-                                            <stop offset="1" stop-color="#bc1888"/>
-                                        </linearGradient>
-                                    </defs>
+                                   
                                 </svg>
                             </div>
                             <div class="story__picture">
-                                <img src="assets1/default-user.png" alt="User Picture">
+                                <img src="{{request.user.profile.image.url}}">
                             </div>
                         </div>
-                        <span class="story__user">usernick1</span>
+                        <span class="story__user">@{{request.user.username}}</span>
                     </button>
-                    <button class="story story--has-story">
+                    <button class="story">
                         <div class="story__avatar">
                             <div class="story__border">
                                 <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
@@ -42,180 +35,12 @@
                                 </svg>
                             </div>
                             <div class="story__picture">
-                                <img src="assets1/default-user.png" alt="User Picture">
+                                <img src="{% static 'assets2/images/6.jpg' %}">
                             </div>
                         </div>
                         <span class="story__user">usernick2</span>
                     </button>
-                    <button class="story story--has-story">
-                        <div class="story__avatar">
-                            <div class="story__border">
-                                <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
-                                    <circle r="31" cy="32" cx="32"/>
-                                </svg>
-                            </div>
-                            <div class="story__picture">
-                                <img src="assets1/default-user.png" alt="User Picture">
-                            </div>
-                        </div>
-                        <span class="story__user">usernick3</span>
-                    </button>
-                    <button class="story">
-                        <div class="story__avatar">
-                            <div class="story__border">
-                                <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
-                                    <circle r="31" cy="32" cx="32"/>
-                                </svg>
-                            </div>
-                            <div class="story__picture">
-                                <img src="assets1/default-user.png" alt="User Picture">
-                            </div>
-                        </div>
-                        <span class="story__user">usernick4</span>
-                    </button>
-                    <button class="story">
-                        <div class="story__avatar">
-                            <div class="story__border">
-                                <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
-                                    <circle r="31" cy="32" cx="32"/>
-                                </svg>
-                            </div>
-                            <div class="story__picture">
-                                <img src="assets1/default-user.png" alt="User Picture">
-                            </div>
-                        </div>
-                        <span class="story__user">usernick5</span>
-                    </button>
-                    <button class="story">
-                        <div class="story__avatar">
-                            <div class="story__border">
-                                <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
-                                    <circle r="31" cy="32" cx="32"/>
-                                </svg>
-                            </div>
-                            <div class="story__picture">
-                                <img src="assets1/default-user.png" alt="User Picture">
-                            </div>
-                        </div>
-                        <span class="story__user">usernick6</span>
-                    </button>
-                    <button class="story">
-                        <div class="story__avatar">
-                            <div class="story__border">
-                                <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
-                                    <circle r="31" cy="32" cx="32"/>
-                                </svg>
-                            </div>
-                            <div class="story__picture">
-                                <img src="assets1/default-user.png" alt="User Picture">
-                            </div>
-                        </div>
-                        <span class="story__user">usernick7</span>
-                    </button>
-                    <button class="story">
-                        <div class="story__avatar">
-                            <div class="story__border">
-                                <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
-                                    <circle r="31" cy="32" cx="32"/>
-                                </svg>
-                            </div>
-                            <div class="story__picture">
-                                <img src="assets1/default-user.png" alt="User Picture">
-                            </div>
-                        </div>
-                        <span class="story__user">usernick8</span>
-                    </button>
-                    <button class="story">
-                        <div class="story__avatar">
-                            <div class="story__border">
-                                <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
-                                    <circle r="31" cy="32" cx="32"/>
-                                </svg>
-                            </div>
-                            <div class="story__picture">
-                                <img src="assets1/default-user.png" alt="User Picture">
-                            </div>
-                        </div>
-                        <span class="story__user">usernick9</span>
-                    </button>
-                    <button class="story">
-                        <div class="story__avatar">
-                            <div class="story__border">
-                                <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
-                                    <circle r="31" cy="32" cx="32"/>
-                                </svg>
-                            </div>
-                            <div class="story__picture">
-                                <img src="assets1/default-user.png" alt="User Picture">
-                            </div>
-                        </div>
-                        <span class="story__user">usernick10</span>
-                    </button>
-                    <button class="story">
-                        <div class="story__avatar">
-                            <div class="story__border">
-                                <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
-                                    <circle r="31" cy="32" cx="32"/>
-                                </svg>
-                            </div>
-                            <div class="story__picture">
-                                <img src="assets1/default-user.png" alt="User Picture">
-                            </div>
-                        </div>
-                        <span class="story__user">usernick11</span>
-                    </button>
-                    <button class="story">
-                        <div class="story__avatar">
-                            <div class="story__border">
-                                <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
-                                    <circle r="31" cy="32" cx="32"/>
-                                </svg>
-                            </div>
-                            <div class="story__picture">
-                                <img src="assets1/default-user.png" alt="User Picture">
-                            </div>
-                        </div>
-                        <span class="story__user">usernick12</span>
-                    </button>
-                    <button class="story">
-                        <div class="story__avatar">
-                            <div class="story__border">
-                                <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
-                                    <circle r="31" cy="32" cx="32"/>
-                                </svg>
-                            </div>
-                            <div class="story__picture">
-                                <img src="assets1/default-user.png" alt="User Picture">
-                            </div>
-                        </div>
-                        <span class="story__user">usernick13</span>
-                    </button>
-                    <button class="story">
-                        <div class="story__avatar">
-                            <div class="story__border">
-                                <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
-                                    <circle r="31" cy="32" cx="32"/>
-                                </svg>
-                            </div>
-                            <div class="story__picture">
-                                <img src="assets1/default-user.png" alt="User Picture">
-                            </div>
-                        </div>
-                        <span class="story__user">usernick14</span>
-                    </button>
-                    <button class="story">
-                        <div class="story__avatar">
-                            <div class="story__border">
-                                <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
-                                    <circle r="31" cy="32" cx="32"/>
-                                </svg>
-                            </div>
-                            <div class="story__picture">
-                                <img src="assets1/default-user.png" alt="User Picture">
-                            </div>
-                        </div>
-                        <span class="story__user">usernick15</span>
-                    </button>
+
                 </div>
                 <button class="stories__right-button">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -326,58 +151,34 @@
                     <h2>Suggestions for You</h2>
                     <button>See All</button>
                 </div>
-                <div class="side-menu__suggestions-content">
+
+                {% for user in all_users %}
+                {% if request.user.username != user.username %}
+
+                
                     <div class="side-menu__suggestion">
-                        <a href="#" class="side-menu__suggestion-avatar">
-                            <img src="assets1/default-user.png" alt="User Picture">
+                        <a href="{% url 'profile' user %}" class="side-menu__suggestion-avatar">
+                            <img src="{{user.profile.image.url}}" alt="User Picture">
                         </a>
+
                         <div class="side-menu__suggestion-info">
-                            <a href="#">usernick16</a>
-                            <span>Followed by user1, user2 and 9 others</span>
+                            {% if user.profile.first_name %}
+                            <a href="{% url 'profile' user %}">{{user.profile.first_name|title}} {{user.profile.last_name|title}}</a>
+                            {% else %}
+                            <a href="{% url 'profile' user %}">{{user.username}}</a>
+                            {% endif %}
+                            <span>@{{user.username}}</span>
                         </div>
-                        <button class="side-menu__suggestion-button">Follow</button>
+                        
+                        {% if follow_status == True %}
+                        <a href="{% url 'follow' user 0 %}" class="side-menu__suggestion-button">Follow</a>
+                        {% else %}
+                        <a href="{% url 'follow' user 1 %}" class="side-menu__suggestion-button" >Follow</a>
+                        {% endif %}
                     </div>
-                    <div class="side-menu__suggestion">
-                        <a href="#" class="side-menu__suggestion-avatar">
-                            <img src="assets1/default-user.png" alt="User Picture">
-                        </a>
-                        <div class="side-menu__suggestion-info">
-                            <a href="#">usernick17</a>
-                            <span>Followed by user1, user2 and 3 others</span>
-                        </div>
-                        <button class="side-menu__suggestion-button">Follow</button>
-                    </div>
-                    <div class="side-menu__suggestion">
-                        <a href="#" class="side-menu__suggestion-avatar">
-                            <img src="assets1/default-user.png" alt="User Picture">
-                        </a>
-                        <div class="side-menu__suggestion-info">
-                            <a href="#">usernick18</a>
-                            <span>Followed by user1 and 9 others</span>
-                        </div>
-                        <button class="side-menu__suggestion-button">Follow</button>
-                    </div>
-                    <div class="side-menu__suggestion">
-                        <a href="#" class="side-menu__suggestion-avatar">
-                            <img src="assets1/default-user.png" alt="User Picture">
-                        </a>
-                        <div class="side-menu__suggestion-info">
-                            <a href="#">usernick19</a>
-                            <span>Followed by user1 and 3 others</span>
-                        </div>
-                        <button class="side-menu__suggestion-button">Follow</button>
-                    </div>
-                    <div class="side-menu__suggestion">
-                        <a href="#" class="side-menu__suggestion-avatar">
-                            <img src="assets1/default-user.png" alt="User Picture">
-                        </a>
-                        <div class="side-menu__suggestion-info">
-                            <a href="#">usernick20</a>
-                            <span>Followed by user1 and 6 others</span>
-                        </div>
-                        <button class="side-menu__suggestion-button">Follow</button>
-                    </div>
-                </div>
+                    {% endif %}
+                    {% endfor %}
+                
             </div>
 
             <div class="side-menu__footer">
@@ -419,7 +220,7 @@
                     </ul>
                 </div>
 
-                <span class="side-menu__footer-copyright">&copy; 2021 instagram from facebook</span>
+                <span class="side-menu__footer-copyright">&copy; 2022 instagram_clone from Rhetice</span>
             </div>
         </section>
     </section>

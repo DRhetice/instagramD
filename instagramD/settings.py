@@ -13,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-rxuh4vdt+c0x#^fzdhj3k_1ostt5k_va*tmu+579nzwtd!$!y=@xjl7me'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -37,6 +37,9 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+
+    
+
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -123,13 +126,13 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-LOGIN_REDIRECT_URL = ""
-LOGOUT_REDIRECT_URL = ""
-LOGIN_URL= ""
+LOGIN_REDIRECT_URL = "index"
+LOGOUT_REDIRECT_URL = "sign-in"
+LOGIN_URL= "sign-in"
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+
+#DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

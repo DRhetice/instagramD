@@ -57,7 +57,7 @@
                             {% else %}
                                 <a href="{% url 'follow' profile.user 1 %}" class="btn profile-edit-btn" style="color: green;">Follow</a> <br><br>
                             {% endif %}
-                            <a href="" class="btn profile-edit-btn">Message</a> <br><br>
+                            <a href="{% url 'conversation' profile.user %}" class="btn profile-edit-btn">Message</a> <br><br>
                         <br>
                         {% endif %}
                         
@@ -130,7 +130,7 @@
             </div>
             <!-- End of gallery -->
 
-            <div class="loader"></div>
+            {% comment %} <div class="loader"></div> {% endcomment %}
 
         </div>
         <!-- End of container -->

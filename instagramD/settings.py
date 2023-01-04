@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-rxuh4vdt+c0x#^fzdhj3k_1ostt5k_va*tmu+579nzwtd!$!y=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','instagramd-production.up.railway.app']
+ALLOWED_HOSTS = ['localhost','https://instagramd-production.up.railway.app']
 
 
 # Application definition

@@ -13,9 +13,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-rxuh4vdt+c0x#^fzdhj3k_1ostt5k_va*tmu+579nzwtd!$!y=@xjl7me'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['localhost','instagramd-production.up.railway.app']
 
 
 # Application definition
@@ -37,8 +37,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-
-    
 
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -114,7 +112,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'instagramd-production.up.railway.app/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
@@ -122,7 +120,7 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-MEDIA_URL = '/media/'
+MEDIA_URL = 'instagramd-production.up.railway.app/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
